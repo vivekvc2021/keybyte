@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>KeyByte</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish"> -->
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a style="margin-left: 20px;" class="navbar-brand" href="index.html">KeyByte LLC</a>
+                <div id="navbarNav" style="text-align: right; margin-right: 20px;">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="company.html">Company</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="technology.html">Technology</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="demo.html">Demo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h3>Rafiki</h3>
+            <br>
+            <div class="row align-items-center">
+                <div class="col">
+                    <a href="https://dl.acm.org/doi/abs/10.1145/3135974.3135991">
+                        <img style="width: 80%;" alt="rafiki" src="images/technology/rafiki.png"></a>
+                </div>
+                <div class="col">
+                    <p>This is our static database tuner</p>
+                    <a href="https://dl.acm.org/doi/abs/10.1145/3135974.3135991"><button type="button" class="btn btn-outline-primary">Read</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h3>Sophia</h3>
+            <br>
+            <div class="row align-items-center">
+                <div class="col">
+                    <a href="https://www.usenix.org/conference/atc19/presentation/mahgoub">
+                        <img style="width: 80%;" alt="sophia" src="images/technology/sophia.png"></a>
+                </div>
+                <div class="col">
+                    <p>
+                        This is a our dynamic, on-premise database tuner for more privacy-minded users, 
+                        optimized for Cassandra and benchmarked against ScyllaDB [patent-pending]
+                    </p>
+                    <a href="https://www.usenix.org/conference/atc19/presentation/mahgoub"><button type="button" class="btn me-md-2 btn-outline-primary">Read</button></a>
+                    <a href="https://www.youtube.com/watch?v=z0u8WWJ5XWs"><button type="button" class="btn btn-outline-primary">Media</button></a>
+                </div>
+            </div>
+            <br><br>
+            <p>
+                Reconfiguring NoSQL databases under changing workload patterns is crucial for maximizing database throughput. 
+                This is challenging because of the large configuration parameter search space with complex interdependencies 
+                among the parameters. While state-of-the-art systems can automatically identify close-to-optimal configurations 
+                for static workloads, they suffer for dynamic workloads as they overlook three fundamental challenges:
+                <ol>
+                    <li>Estimating performance degradation during the reconfiguration process (such as due to database restart).</li>
+                    <li>Predicting how transient the new workload pattern will be.</li>
+                    <li>Respecting the application’s availability requirements during reconfiguration.</li>
+                </ol>
+            </p>
+            <p>Our solution, SOPHIA, addresses all these shortcomings using an optimization technique that combines workload prediction with a cost-benefit analyzer.</p>
+            <p>
+                SOPHIA computes the relative cost and benefit of each reconfiguration step, and determines an optimal 
+                reconfiguration for a future time window. This plan specifies when to change configurations and to what, 
+                to achieve the best performance without degrading data availability. We demonstrate its effectiveness for 
+                three different workloads: a multi-tenant, global-scale metagenomics repository (MG-RAST), a bus-tracking 
+                application (Tiramisu), and an HPC data-analytics system, all with varying levels of workload complexity and 
+                demonstrating dynamic workload changes.
+            </p>
+            <p>SOPHIA outperforms in throughput and tail-latency various baselines for two popular NoSQL databases, Cassandra and Redis.</p>
+        </div>
+
+        <div class="container">
+            <h3>OptimusCloud</h3>
+            <br>
+            <div class="row align-items-center">
+                <div class="col">
+                    <a href="https://www.usenix.org/conference/atc20/presentation/mahgoub">
+                        <img style="width: 80%;" alt="optimuscloud" src="images/technology/optimuscloud.png"></a>
+                </div>
+                <div class="col">
+                    <p>This is a our dynamic, cloud-hosted database tuner, optimized for Cassandra and AWS [patent-pending]</p>
+                    <a href="https://www.usenix.org/conference/atc20/presentation/mahgoub"><button type="button" class="btn me-md-2 btn-outline-primary">Read</button></a>
+                    <a href="https://www.youtube.com/watch?v=PV_ZQnp5CDo"><button type="button" class="btn me-md-2 btn-outline-primary">Media 1</button></a>
+                    <a href="https://www.youtube.com/watch?v=TVWIaFg0XSM"><button type="button" class="btn btn-outline-primary">Media 2</button></a>
+                </div>
+            </div>
+            <br><br>
+            <p>
+                Achieving cost and performance efficiency for cloud-hosted databases requires exploring a large 
+                configuration space, including the parameters exposed by the database along with the variety of 
+                VM configurations available in the cloud. Even small deviations from an optimal configuration have 
+                significant consequences on performance and cost. Existing systems that automate cloud deployment 
+                configuration can select near-optimal instance types for homogeneous clusters of virtual machines 
+                and for stateless, recurrent data analytics workloads.
+            </p>
+            <p>OptimusCloud finds optimal performance-per-$ cloud deployments for NoSQL database applications.</p>
+            <p>
+                It has the following three distinctive features:
+                <ol>
+                    <li>It considers heterogeneous cluster configurations,</li>
+                    <li>It jointly optimizes database and VM configurations, and</li>
+                    <li>It dynamically adjusts configuration as workload behavior changes.</li>
+                </ol>
+            </p>
+            <p>
+                We evaluate OptimusCloud with two clustered NoSQL systems: Cassandra and Redis, using three representative 
+                workloads and show that it provides 40% higher throughput/$ and 4.5X lower 99-th percentile latency on 
+                average compared to state-of-the-art prior systems, CherryPick, Selecta, and SOPHIA.
+            </p>
+        </div>
+
+        <div class="container">
+            <h3>Sonic</h3>
+            <br>
+            <!-- <div class="row align-items-center">
+                <div class="col">
+                    <a href="https://dl.acm.org/doi/abs/10.1145/3135974.3135991">
+                        <img style="width: 80%;" alt="rafiki" src="images/technology/rafiki.png"></a>
+                </div>
+                <div class="col"> -->
+                    <p>Optimization for serverless workloads, accepted to USENIX ATC 2021</p>
+                    <!-- <a href="https://dl.acm.org/doi/abs/10.1145/3135974.3135991"><button type="button" class="btn btn-outline-primary">Read</button></a>
+                </div>
+            </div> -->
+        </div>
+    </body>
+
+</html>
