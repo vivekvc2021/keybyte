@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>KeyByte Technology: OptimusCloud</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish"> -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a style="margin-left: 20px;" class="navbar-brand" href="index.html">KeyByte LLC</a>
+        <div id="navbarNav" style="text-align: right; margin-right: 20px;">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="company.html">Company</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="technology.html">Technology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="demo.html">Demo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <p>
+      Achieving cost and performance efficiency for cloud-hosted databases requires exploring a large 
+      configuration space, including the parameters exposed by the database along with the variety of 
+      VM configurations available in the cloud. Even small deviations from an optimal configuration have 
+      significant consequences on performance and cost. Existing systems that automate cloud deployment 
+      configuration can select near-optimal instance types for homogeneous clusters of virtual machines 
+      and for stateless, recurrent data analytics workloads.
+    </p>
+    <p>OptimusCloud finds optimal performance-per-$ cloud deployments for NoSQL database applications.</p>
+    <p>
+      We evaluate OptimusCloud with two clustered NoSQL systems: Cassandra and Redis, using three representative 
+      workloads and show that it provides 40% higher throughput/$ and 4.5X lower 99-th percentile latency on 
+      average compared to state-of-the-art prior systems, CherryPick, Selecta, and SOPHIA.
+    </p>
+
+  </body>
