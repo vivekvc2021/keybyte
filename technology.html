@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>KeyByte</title>
+        <title>KeyByte Technology</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
@@ -38,6 +38,144 @@
             </div>
         </nav>
 
+	<div class="container">
+          <h3>OptimusCloud</h3>
+          <br>
+          <div class="row align-items-center">
+            <div class="col">
+              <a href="https://www.usenix.org/conference/atc20/presentation/mahgoub">
+                <img style="width: 80%;" alt="optimuscloud" src="images/technology/optimuscloud.png"></a>
+            </div>
+            <div class="col">
+              <p>This is a our dynamic, cloud-hosted database tuner, optimized for Cassandra and AWS [patent-pending]</p>
+              <a href="https://www.usenix.org/conference/atc20/presentation/mahgoub"><button type="button" class="btn me-md-2 btn-outline-primary">Read</button></a>
+              <a href="https://www.youtube.com/watch?v=PV_ZQnp5CDo"><button type="button" class="btn me-md-2 btn-outline-primary">Media 1</button></a>
+              <a href="https://www.youtube.com/watch?v=TVWIaFg0XSM"><button type="button" class="btn btn-outline-primary">Media 2</button></a>
+	      <br><br>
+	      <h5> Appeared in Usenix Annual Technical Conference, 2020 </h5>
+	    </div>
+          </div>
+          <br><br>
+          <p>
+            Achieving cost and performance efficiency for cloud-hosted databases requires exploring a large 
+            configuration space, including the parameters exposed by the database along with the variety of 
+            VM configurations available in the cloud. Even small deviations from an optimal configuration have 
+            significant consequences on performance and cost. Existing systems that automate cloud deployment 
+            configuration can select near-optimal instance types for homogeneous clusters of virtual machines 
+            and for stateless, recurrent data analytics workloads.
+          </p>
+          <p>OptimusCloud finds optimal performance-per-$ cloud deployments for NoSQL database applications.</p>
+          <p>
+            It has the following three distinctive features:
+            <ol>
+              <li>It considers heterogeneous cluster configurations,</li>
+              <li>It jointly optimizes database and VM configurations, and</li>
+              <li>It dynamically adjusts configuration as workload behavior changes.</li>
+            </ol>
+          </p>
+          <p>
+            We evaluate OptimusCloud with two clustered NoSQL systems: Cassandra and Redis, using three representative 
+            workloads and show that it provides 40% higher throughput/$ and 4.5X lower 99-th percentile latency on 
+            average compared to state-of-the-art prior systems, CherryPick, Selecta, and SOPHIA.
+          </p>
+        </div>
+
+        <div class="container">
+          <h3>Sophia</h3>
+          <br>
+          <div class="row align-items-center">
+            <div class="col">
+              <a href="https://www.usenix.org/conference/atc19/presentation/mahgoub">
+                <img style="width: 80%;" alt="sophia" src="images/technology/sophia.png"></a>
+            </div>
+            <div class="col">
+              <p>
+                This is our dynamic, on-premise database tuner for more privacy-minded users, 
+                optimized for Cassandra and benchmarked against ScyllaDB [patent-pending]
+              </p>
+              <a href="https://www.usenix.org/conference/atc19/presentation/mahgoub"><button type="button" class="btn me-md-2 btn-outline-primary">Read</button></a>
+              <a href="https://www.youtube.com/watch?v=z0u8WWJ5XWs"><button type="button" class="btn btn-outline-primary">Media</button></a>
+	      <br><br>
+	      <h5> Appeared in Usenix Annual Technical Conference, 2019 </h5>
+            </div>
+          </div>
+          <br><br>
+          <p>
+            Reconfiguring NoSQL databases under changing workload patterns is crucial for maximizing database throughput. 
+            This is challenging because of the large configuration parameter search space with complex interdependencies 
+            among the parameters. While state-of-the-art systems can automatically identify close-to-optimal configurations 
+            for static workloads, they suffer for dynamic workloads as they overlook three fundamental challenges:
+            <ol>
+              <li>Estimating performance degradation during the reconfiguration process (such as due to database restart).</li>
+              <li>Predicting how transient the new workload pattern will be.</li>
+              <li>Respecting the application’s availability requirements during reconfiguration.</li>
+            </ol>
+          </p>
+          <p>Our solution, SOPHIA, addresses all these shortcomings using an optimization technique that combines workload prediction with a cost-benefit analyzer.</p>
+          <p>
+            SOPHIA computes the relative cost and benefit of each reconfiguration step, and determines an optimal 
+            reconfiguration for a future time window. This plan specifies when to change configurations and to what, 
+            to achieve the best performance without degrading data availability. We demonstrate its effectiveness for 
+            three different workloads: a multi-tenant, global-scale metagenomics repository (MG-RAST), a bus-tracking 
+            application (Tiramisu), and an HPC data-analytics system, all with varying levels of workload complexity and 
+            demonstrating dynamic workload changes.
+          </p>
+          <p>SOPHIA outperforms in throughput and tail-latency various baselines for two popular NoSQL databases, Cassandra and Redis.</p>
+        </div>
+
+        <div class="container">
+          <h3>Sonic</h3>
+          <br>
+          <div class="row align-items-center">
+            <div class="col">
+              <a href="https://www.usenix.org/conference/atc21/presentation/mahgoub">
+                <img style="width: 40%;" alt="sonic" src="images/technology/sonic_DAG_video.png">
+                <img style="width: 40%;" alt="sonic" src="images/technology/sonic_three_methods.png"></a>
+            </div>
+            <div class="col">
+              <p>This is our offering for serverless applications and customizes how to pass data between serverless functions to minimize latency [patent-pending]</p>
+              <a href="https://www.usenix.org/conference/atc21/presentation/mahgoub"><button type="button" class="btn me-md-2 btn-outline-primary">Read</button></a>
+              <a href="https://www.usenix.org/system/files/atc21_slides_mahgoub.pdf"><button type="button" class="btn me-md-2 btn-outline-primary">Presentation</button></a>
+	      <br><br>
+	      <h5> To appear in Usenix Annual Technical Conference, 2021 </h5>         
+            </div>
+          </div>
+          <br><br>
+          <p>
+	    Data analytics applications are increasingly leveraging
+	    serverless execution environments for their ease-of-use
+	    and pay-as-you-go billing. The structure of such
+	    applications is usually composed of multiple functions
+	    that are chained together to form a workflow. The current
+	    approach of exchanging intermediate (ephemeral) data
+	    between functions is through a remote storage (such as
+	    S3), which introduces significant performance overhead.
+          </p>
+          <p>
+	    SONIC is a data-passing manager that optimizes application
+	    performance and cost, by transparently selecting the
+	    optimal data-passing method for each edge of a serverless
+	    workflow DAG and implementing communication-aware function
+	    placement.
+	  </p>
+          <p>
+            It has the following three distinctive features:
+            <ol>
+              <li>It applies to the emerging class of serverless applications,</li>
+              <li>It dynamically selects the best data passing options balancing latency and cost, and</li>
+              <li>It does not need any modification to the applications.</li>
+            </ol>
+          </p>
+          <p>
+	    We evaluate Sonic on Amazon EC2 with three analytics
+	    applications, popular in the serverless environment. SONIC
+	    provides lower latency (raw performance) and higher
+	    performance/$ across diverse conditions, compared to four
+	    baselines: SAND, vanilla OpenLambda, OpenLambda with
+	    Pocket, and AWS Lambda.
+          </p>
+        </div>
+
         <div class="container">
             <h3>Rafiki</h3>
             <br>
@@ -47,107 +185,15 @@
                         <img style="width: 80%;" alt="rafiki" src="images/technology/rafiki.png"></a>
                 </div>
                 <div class="col">
-                    <p>This is our static database tuner</p>
-                    <a href="https://dl.acm.org/doi/abs/10.1145/3135974.3135991"><button type="button" class="btn btn-outline-primary">Read</button></a>
+                  <p>This is our static database tuner. Given a static workload and execution environment, it provides the optimal configuration for your Cassandra database. </p>
+                  <a href="https://dl.acm.org/doi/abs/10.1145/3135974.3135991"><button type="button" class="btn btn-outline-primary">Read</button></a>
+		  <br><br>
+		  <h5> Appeared in ACM/IFIP/USENIX Middleware Conference, 2017 </h5>         
                 </div>
             </div>
         </div>
 
-        <div class="container">
-            <h3>Sophia</h3>
-            <br>
-            <div class="row align-items-center">
-                <div class="col">
-                    <a href="https://www.usenix.org/conference/atc19/presentation/mahgoub">
-                        <img style="width: 80%;" alt="sophia" src="images/technology/sophia.png"></a>
-                </div>
-                <div class="col">
-                    <p>
-                        This is a our dynamic, on-premise database tuner for more privacy-minded users, 
-                        optimized for Cassandra and benchmarked against ScyllaDB [patent-pending]
-                    </p>
-                    <a href="https://www.usenix.org/conference/atc19/presentation/mahgoub"><button type="button" class="btn me-md-2 btn-outline-primary">Read</button></a>
-                    <a href="https://www.youtube.com/watch?v=z0u8WWJ5XWs"><button type="button" class="btn btn-outline-primary">Media</button></a>
-                </div>
-            </div>
-            <br><br>
-            <p>
-                Reconfiguring NoSQL databases under changing workload patterns is crucial for maximizing database throughput. 
-                This is challenging because of the large configuration parameter search space with complex interdependencies 
-                among the parameters. While state-of-the-art systems can automatically identify close-to-optimal configurations 
-                for static workloads, they suffer for dynamic workloads as they overlook three fundamental challenges:
-                <ol>
-                    <li>Estimating performance degradation during the reconfiguration process (such as due to database restart).</li>
-                    <li>Predicting how transient the new workload pattern will be.</li>
-                    <li>Respecting the application’s availability requirements during reconfiguration.</li>
-                </ol>
-            </p>
-            <p>Our solution, SOPHIA, addresses all these shortcomings using an optimization technique that combines workload prediction with a cost-benefit analyzer.</p>
-            <p>
-                SOPHIA computes the relative cost and benefit of each reconfiguration step, and determines an optimal 
-                reconfiguration for a future time window. This plan specifies when to change configurations and to what, 
-                to achieve the best performance without degrading data availability. We demonstrate its effectiveness for 
-                three different workloads: a multi-tenant, global-scale metagenomics repository (MG-RAST), a bus-tracking 
-                application (Tiramisu), and an HPC data-analytics system, all with varying levels of workload complexity and 
-                demonstrating dynamic workload changes.
-            </p>
-            <p>SOPHIA outperforms in throughput and tail-latency various baselines for two popular NoSQL databases, Cassandra and Redis.</p>
-        </div>
 
-        <div class="container">
-            <h3>OptimusCloud</h3>
-            <br>
-            <div class="row align-items-center">
-                <div class="col">
-                    <a href="https://www.usenix.org/conference/atc20/presentation/mahgoub">
-                        <img style="width: 80%;" alt="optimuscloud" src="images/technology/optimuscloud.png"></a>
-                </div>
-                <div class="col">
-                    <p>This is a our dynamic, cloud-hosted database tuner, optimized for Cassandra and AWS [patent-pending]</p>
-                    <a href="https://www.usenix.org/conference/atc20/presentation/mahgoub"><button type="button" class="btn me-md-2 btn-outline-primary">Read</button></a>
-                    <a href="https://www.youtube.com/watch?v=PV_ZQnp5CDo"><button type="button" class="btn me-md-2 btn-outline-primary">Media 1</button></a>
-                    <a href="https://www.youtube.com/watch?v=TVWIaFg0XSM"><button type="button" class="btn btn-outline-primary">Media 2</button></a>
-                </div>
-            </div>
-            <br><br>
-            <p>
-                Achieving cost and performance efficiency for cloud-hosted databases requires exploring a large 
-                configuration space, including the parameters exposed by the database along with the variety of 
-                VM configurations available in the cloud. Even small deviations from an optimal configuration have 
-                significant consequences on performance and cost. Existing systems that automate cloud deployment 
-                configuration can select near-optimal instance types for homogeneous clusters of virtual machines 
-                and for stateless, recurrent data analytics workloads.
-            </p>
-            <p>OptimusCloud finds optimal performance-per-$ cloud deployments for NoSQL database applications.</p>
-            <p>
-                It has the following three distinctive features:
-                <ol>
-                    <li>It considers heterogeneous cluster configurations,</li>
-                    <li>It jointly optimizes database and VM configurations, and</li>
-                    <li>It dynamically adjusts configuration as workload behavior changes.</li>
-                </ol>
-            </p>
-            <p>
-                We evaluate OptimusCloud with two clustered NoSQL systems: Cassandra and Redis, using three representative 
-                workloads and show that it provides 40% higher throughput/$ and 4.5X lower 99-th percentile latency on 
-                average compared to state-of-the-art prior systems, CherryPick, Selecta, and SOPHIA.
-            </p>
-        </div>
-
-        <div class="container">
-            <h3>Sonic</h3>
-            <br>
-            <!-- <div class="row align-items-center">
-                <div class="col">
-                    <a href="https://dl.acm.org/doi/abs/10.1145/3135974.3135991">
-                        <img style="width: 80%;" alt="rafiki" src="images/technology/rafiki.png"></a>
-                </div>
-                <div class="col"> -->
-                    <p>Optimization for serverless workloads, accepted to USENIX ATC 2021</p>
-                    <!-- <a href="https://dl.acm.org/doi/abs/10.1145/3135974.3135991"><button type="button" class="btn btn-outline-primary">Read</button></a>
-                </div>
-            </div> -->
-        </div>
     </body>
 
 </html>
