@@ -1,3 +1,7 @@
 .container {
     margin: 8%;
 }
+
+p.widelines {
+  line-height: 1.5;
+}
