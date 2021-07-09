@@ -12,3 +12,6 @@ h1, h3 {
     font-family: Comfortaa, sans-serif;
     font-weight: bold;
 }
+p.widelines {
+  line-height: 1.5;
+}
