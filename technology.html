@@ -5,70 +5,48 @@
         <link rel="icon" href="images/keybyte-logo.png">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|Comfortaa" rel="stylesheet">
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a style="margin-left: 20px;" class="navbar-brand" href="index.html">
-                  <img style="width: 20px;" alt="logo" src="images/keybyte-logo.png"> KeyByte LLC</a>
-                <div id="navbarNav" style="text-align: right; margin-right: 20px;">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="company.html">Company</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="technology.html">Technology</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="demo.html">Demo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-	<div class="container">
-          <h3>OptimusCloud</h3>
-          <br>
-          <div class="row align-items-center">
-            <div class="col">
-              <a href="https://www.usenix.org/conference/atc20/presentation/mahgoub">
-                <img style="width: 80%;" alt="optimuscloud" src="images/technology/optimuscloud.png"></a>
-            </div>
-            <div class="col">
-              <p>This is a our dynamic, cloud-hosted database tuner, optimized for Cassandra and AWS</p>
-              <a href="https://www.usenix.org/conference/atc20/presentation/mahgoub"><button type="button" class="btn me-md-2 btn-outline-primary">Read</button></a>
-              <a href="https://www.youtube.com/watch?v=PV_ZQnp5CDo"><button type="button" class="btn me-md-2 btn-outline-primary">Media 1</button></a>
-              <a href="https://www.youtube.com/watch?v=TVWIaFg0XSM"><button type="button" class="btn btn-outline-primary">Media 2</button></a>
-	      <br><br>
-	      <h5> Appeared in Usenix Annual Technical Conference, 2020 </h5>
-	      <h5> US Patent Pending </h5>
-	    </div>
+      <div id="nav-placeholder">
+        <script>
+            $("#nav-placeholder").load("nav.html");
+        </script>
+      </div>
+      
+      <div class="container">
+        <h3>OptimusCloud</h3>
+        <br>
+        <div class="row align-items-center">
+          <div class="col">
+            <a href="https://www.usenix.org/conference/atc20/presentation/mahgoub">
+              <img style="width: 80%;" alt="optimuscloud" src="images/technology/optimuscloud.png"></a>
           </div>
-          <br><br>
-          <p>
-            OptimusCloud has the following three distinctive features:
-            <ol>
-              <li>It considers heterogeneous cluster configurations,</li>
-              <li>It jointly optimizes database and VM configurations, and</li>
-              <li>It dynamically adjusts configuration as workload behavior changes.</li>
-            </ol>
-            <a href="techdetails/optimuscloud.html"><button type="button" class="btn btn-outline-primary">Details</button></a>
-	  </p>
+          <div class="col">
+            <p>This is a our dynamic, cloud-hosted database tuner, optimized for Cassandra and AWS</p>
+            <a href="https://www.usenix.org/conference/atc20/presentation/mahgoub"><button type="button" class="btn me-md-2 btn-outline-primary">Read</button></a>
+            <a href="https://www.youtube.com/watch?v=PV_ZQnp5CDo"><button type="button" class="btn me-md-2 btn-outline-primary">Media 1</button></a>
+            <a href="https://www.youtube.com/watch?v=TVWIaFg0XSM"><button type="button" class="btn btn-outline-primary">Media 2</button></a>
+            <br><br>
+            <h5> Appeared in Usenix Annual Technical Conference, 2020 </h5>
+            <h5> US Patent Pending </h5>
+          </div>
         </div>
+        <br><br>
+        <p>
+          OptimusCloud has the following three distinctive features:
+          <ol>
+            <li>It considers heterogeneous cluster configurations,</li>
+            <li>It jointly optimizes database and VM configurations, and</li>
+            <li>It dynamically adjusts configuration as workload behavior changes.</li>
+          </ol>
+          <a href="techdetails/optimuscloud.html"><button type="button" class="btn btn-outline-primary">Details</button></a>
+        </p>
+      </div>
 
 	<hr>
 	
