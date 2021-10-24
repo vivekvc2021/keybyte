@@ -12,6 +12,17 @@ h1, h3 {
     font-family: Comfortaa, sans-serif;
     font-weight: bold;
 }
+
 p.widelines {
   line-height: 1.5;
+}
+
+a {
+    color: #358BC6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #358BC6;
+    text-decoration: underline;
 }
