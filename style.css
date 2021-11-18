@@ -26,3 +26,10 @@ a:hover {
     color: #358BC6;
     text-decoration: underline;
 }
+
+.pop-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+}

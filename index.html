@@ -9,6 +9,25 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|Comfortaa" rel="stylesheet">
         <link href="style.css" rel="stylesheet" type="text/css">
+
+        <script>
+            // When the user clicks on div, open the popup
+            function popupFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+            }
+        </script>
+        <style>
+            .hide {
+                display: none;
+            }
+            .show {
+                display: block;
+                position: fixed;
+                bottom: 30px;
+                right: 130px;
+            }
+        </style>
     </head>
 
     <body>
@@ -19,6 +38,25 @@
         </div>
 
         <div class="container">
+            
+            <div class="card hide" id="myPopup" style="width: 14rem;">
+                <div class="card-header">
+                  Welcome to KeyByte!
+                </div>
+                <div class="card-body">
+                    <a href="demo.html" class="btn btn-outline-primary">Interested to try out our product?</a>
+                    <br><br>
+                    <a href="learn.html" class="btn btn-outline-primary">Learn more of our technology?</a>
+                    <br><br>
+                    <a href="https://airtable.com/shrur0thjObPCJeol" class="btn btn-outline-primary">Existing customer and need support?</a>
+                </div>
+            </div>
+
+            <div onclick="popupFunction()">
+                <a type="button"><img class="pop-up" alt="" src="images/pop-up.png"></a>
+            </div>
+
+
             <br>
             <div class="row align-items-center">
                 <div class="col">
