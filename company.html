@@ -24,9 +24,34 @@
 	      line-height: 1.8;
 	  }
 
-    html {
+
+    .button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      max-width:500px;
+    }
+
+    .buttonDown{
+      background-color: white;
+      color: black;
+      border: 1px;
       scroll-behavior: smooth;
     }
+
+    .buttonDown:hover{background-color:grey}
+
+    /* .scrollable:hover {
+      scroll-behavior: smooth;
+    } */
 
     #section1 {
     }
@@ -56,22 +81,24 @@
 
         <div>
             <center>
-            <a href=#section2><img src="images/arrow_very_down.png" width=10%></a>
+            <!-- <a class="scrollable" href=#section2><img src="images/arrow_very_down.png" width=10%></a> -->
+
+            <button class="button buttonDown" class="scrollable"><a href=#section2><img src="images/arrow_very_down.png" width=10%></a></button>
           </center>
 
         </div>
 
 
         <div class="contain" id="section2"> <center>
-            <h3>KeyByte Products  <img src="images/solution.png" width=10%> </h3>
-            <h4>
-
-                <li>OptimusCloud: For cloud-hosted databases</li>
-                <li>Sophia: For on-premise databases</li>
-                <li>SONIC: For serverless optimization for machine learning workloads</li>
-                <li>Rafiki: For databases with static workloads</li>
-
-	    </h4> </center>
+            <h3>KeyByte Products and Technology<img src="images/solution.png" width=10%> </h3>
+            <h4> <u>
+                <a href="https://keybyte.xyz/techdetails/optimuscloud.html">OptimusCloud: For cloud-hosted databases</a> <br>
+                <a style="color:green" href="https://keybyte.xyz/techdetails/sophia.html">Sophia: For on-premise databases</a> <br>
+                <a style="color:red" href="https://keybyte.xyz/techdetails/sonic.html">SONIC: For serverless optimization for machine learning workloads</a> <br>
+                <a style="color:purple"href="https://dl.acm.org/doi/abs/10.1145/3135974.3135991">Rafiki: For databases with static workloads</a> <br>
+                <br></br>
+                <br></br>
+	   </u> </h4> </center>
         </div>
     </body>
 
