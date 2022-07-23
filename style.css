@@ -1,6 +1,12 @@
 .container {
-    margin: 8%;
+  max-width: 80%;
+  padding: 50px;
+  border: 2px solid grey;
+  margin: auto;
+  border-radius: 25px;
+  box-sizing: content-box;
 }
+
 
 body {
     font-family: Nunito, sans-serif;
