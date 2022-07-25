@@ -56,29 +56,46 @@
 
 <!-- WISEFUSE -->
 
-      <div class="contain" style="height:500px;">
+      <div class="contain" style="height:575px;">
           <h3><center>WISEFUSE</center></h3>
 
           <div class="minicontain">
-            <p><center>Best Paper Award Winner</center></p>
+            <a href="https://twitter.com/SomaliChaterji/status/1534171298015870976?s=20&t=kI9knwdZkwz1rpbGjBCtNQ"
+            style="color:black;"><center>Best Paper Award Winner</center></a>
           </div>
 
           <br></br>
 
-          <!-- <div id="content">
-              <img src="images/technology/awardwinnerbanner.png" alt="award-winning banner" width=300px/>
-          </div> -->
+          <div class="row align-items-center"style="max-width: 40%; float:left; max-height:20%; background:white; margin:0px">
+            <div class="col">
+              <br></br>
+              <a href="https://schaterji.io/publications/2022/wisefuse/">
+                <img style="width: 130%;" alt="wisefuse" src="images/technology/wisefuse.png"></a>
+            </div>
+          </div>
 
-          <div class="row align-items-center"> <center>
-            <a href="https://schaterji.io/publications/2022/wisefuse/">
-                <img style="width: 60%;" alt="wisefuse" src="images/technology/wisefuse.png"></a>
-                <br></br>
-                <h5>This is our paper on ______, recipient of the Best Paper Award at the Sigmetrics 2022 Conference. </h5>
-                <a href="https://dl.acm.org/doi/abs/10.1145/3530892"><button type="button" class="btn btn-outline-primary">Sigmetrics 2022 Research Paper</button></a>
-                <br><br>
-                <h6> Appeared in Sigmetrics Conference, 2022 </h6>
-              </div>
-          </center>
+          <div class="row align-items-center"style="max-width: 50%; float:right; max-height:20%; background:white; margin:0px"> <center>
+            <div class="col">
+              <h5>This is our automated approach to generating optimized execution plans for serverless DAGs,
+              with regards to latency objective or budget.</h5>
+              <a href="https://dl.acm.org/doi/abs/10.1145/3530892"><button type="button" class="btn me-md-2 btn-outline-primary">Sigmetrics Research Paper</button></a>
+              <br><br>
+              <h6> Appeared in Sigmetrics Conference, 2022</h6>
+              <br></br>
+            </center>
+            <h6> </h6>
+              <h4><center>WISEFUSE has the following three key optimizations:</center></h4>
+              <h5>
+              <ol>
+                <li>It combines in-series functions together within one VM to reduce overhead communication between cascaded functions.</li>
+                <li>It executes a group of parallel invocations of a function within a VM, improving resource sharing.</li>
+                <li>It improves resource allocation, assigning the correct VM size to each function/function bundle to reduce E2E latency and cost.</li>
+              </ol> <center>
+              <a href="https://schaterji.io/publications/2022/wisefuse/"><button type="button" class="btn btn-outline-primary">Learn More</button></a> </center>
+            </h5>
+        </div>
+      </div>
+
 
 
       </div>
@@ -101,7 +118,8 @@
 
                 <div class="row align-items-center"style="max-width: 50%; float:right; max-height:20%; background:white; margin:0px"> <center>
                   <div class="col">
-                    <h5>This is our ________</h5>
+                    <h5>This is our offering for estimating E2E latency and allocating resources to meet probabilistic guarantees for E2E latency.
+                    Compatible with AWS Lambda.</h5>
                     <a href="https://schaterji.io/papers/Orion-camera-ready.pdf"><button type="button" class="btn me-md-2 btn-outline-primary">USENIX Research Paper</button></a>
                     <a href="https://schaterji.io/papers/Orion-slides.pdf"><button type="button" class="btn me-md-2 btn-outline-primary">USENIX Presentation Slides</button></a>
                     <br><br>
@@ -112,9 +130,9 @@
                     <h4><center>Orion has the following three distinctive features:</center></h4>
                     <h5>
                     <ol>
-                      <li>Goal 1</li>
-                      <li>Goal 2</li>
-                      <li>Goal 3</li>
+                      <li>It creates a performance model accounting for runtime dependencies within a DAG.</li>
+                      <li>It uses a method for co-locating parallel invocations in a VM, mitigating skew among the invocations.</li>
+                      <li>It uses a method for pre-warming VMs for ensuing functions in a DAG.</li>
                     </ol> <center>
                     <a href="https://schaterji.io/publications/2022/orion/"><button type="button" class="btn btn-outline-primary">Learn More</button></a> </center>
                   </h5>
