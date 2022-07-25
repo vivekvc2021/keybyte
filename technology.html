@@ -18,6 +18,30 @@
 
             gtag('config', 'UA-214886339-1');
         </script>
+
+        <style>
+            /* #content {
+                position: relative;
+            }
+            #content img {
+                position: absolute;
+                top: -170px;
+                right: 0px;
+            } */
+
+            .minicontain{
+              max-width: 20%;
+              max-height:30px;
+              max-height:400px;
+              padding: 0px;
+              border: 2px solid grey;
+              margin: auto;
+              border-radius: 11px;
+              /* border-radius:5px; */
+              box-sizing: content-box;
+              background-color: #F1E5AC;
+            }
+        </style>
     </head>
 
     <body>
@@ -26,129 +50,256 @@
             $("#nav-placeholder").load("nav.html");
         </script>
       </div>
-      
-      <div class="container">
-        <h3>OptimusCloud</h3>
-        <br>
-        <div class="row align-items-center">
-          <div class="col">
-            <a href="https://www.usenix.org/conference/atc20/presentation/mahgoub">
-              <img style="width: 80%;" alt="optimuscloud" src="images/technology/optimuscloud.png"></a>
+
+
+      <h3 class=header>Technology</h3>
+
+<!-- WISEFUSE -->
+
+      <div class="contain" style="height:575px;">
+          <h3><center>WISEFUSE</center></h3>
+
+          <div class="minicontain">
+            <a href="https://twitter.com/SomaliChaterji/status/1534171298015870976?s=20&t=kI9knwdZkwz1rpbGjBCtNQ"
+            style="color:black;"><center>Best Paper Award Winner</center></a>
           </div>
-          <div class="col">
-            <h5>This is a our dynamic, cloud-hosted database tuner, optimized for Cassandra and AWS</h5>
-            <a href="https://www.usenix.org/conference/atc20/presentation/mahgoub"><button type="button" class="btn me-md-2 btn-outline-primary">Read</button></a>
-            <a href="https://www.youtube.com/watch?v=PV_ZQnp5CDo"><button type="button" class="btn me-md-2 btn-outline-primary">Media 1</button></a>
-            <a href="https://www.youtube.com/watch?v=TVWIaFg0XSM"><button type="button" class="btn btn-outline-primary">Media 2</button></a>
-            <br><br>
-            <h5> Appeared in Usenix Annual Technical Conference, 2020 </h5>
-            <h5> US Patent Pending </h5>
+
+          <br></br>
+
+          <div class="row align-items-center"style="max-width: 50%; float:right; max-height:20%; background:white; margin:0px">
+            <div class="col">
+              <br></br>
+              <br>
+              <a href="https://schaterji.io/publications/2022/wisefuse/">
+                <img style="width: 110%;" alt="wisefuse" src="images/technology/wisefuse.png"></a>
+            </div>
           </div>
+
+          <div class="row align-items-center"style="max-width: 50%; float:left; max-height:20%; background:white; margin:0px"> <center>
+            <div class="col">
+              <h5>This is our automated approach to generating optimized execution plans for serverless DAGs,
+              with regards to latency objective or budget.</h5>
+              <a href="https://dl.acm.org/doi/abs/10.1145/3530892"><button type="button" class="btn me-md-2 btn-outline-primary">Sigmetrics Research Paper</button></a>
+              <br><br>
+              <h6> Appeared in Sigmetrics Conference, 2022</h6>
+              <br></br>
+            </center>
+            <h6> </h6>
+              <h4><center>WISEFUSE has the following three key optimizations:</center></h4>
+              <h5>
+              <ol>
+                <li>It combines in-series functions together within one VM to reduce overhead communication between cascaded functions.</li>
+                <li>It executes a group of parallel invocations of a function within a VM, improving resource sharing.</li>
+                <li>It improves resource allocation, assigning the correct VM size to each function/function bundle to reduce E2E latency and cost.</li>
+              </ol> <center>
+              <a href="https://schaterji.io/publications/2022/wisefuse/"><button type="button" class="btn btn-outline-primary">Learn More</button></a> </center>
+            </h5>
         </div>
-        <br><br>
-        <p>
-          OptimusCloud has the following three distinctive features:
-          <ol>
-            <li>It considers heterogeneous cluster configurations,</li>
-            <li>It jointly optimizes database and VM configurations, and</li>
-            <li>It dynamically adjusts configuration as workload behavior changes.</li>
-          </ol>
-          <a href="techdetails/optimuscloud.html"><button type="button" class="btn btn-outline-primary">Details</button></a>
-        </p>
       </div>
 
-	<hr>
-	
-        <div class="container">
-          <h3>Sophia</h3>
+
+
+      </div>
+      <br> </br>
+
+
+<!-- Orion -->
+
+        <div class="contain" style="height:500px;">
+                <h3><center>Orion</center></h3>
+                <br>
+                <div class="row align-items-center"style="max-width: 40%; float:left; max-height:20%; background:white; margin:0px">
+                  <div class="col">
+                    <a href="https://schaterji.io/publications/2022/orion/">
+                      <img style="width: 100%;" alt="orion" src="images/technology/orion1.png"></a>
+                      <a href="https://schaterji.io/publications/2022/orion/"><center>
+                        <img style="width: 70%;" alt="orion" src="images/technology/orion2.png"></center></a>
+                  </div>
+                </div>
+
+                <div class="row align-items-center"style="max-width: 50%; float:right; max-height:20%; background:white; margin:0px"> <center>
+                  <div class="col">
+                    <h5>This is our offering for estimating E2E latency and allocating resources to meet probabilistic guarantees for E2E latency.
+                    Compatible with AWS Lambda.</h5>
+                    <a href="https://schaterji.io/papers/Orion-camera-ready.pdf"><button type="button" class="btn me-md-2 btn-outline-primary">USENIX Research Paper</button></a>
+                    <a href="https://schaterji.io/papers/Orion-slides.pdf"><button type="button" class="btn me-md-2 btn-outline-primary">USENIX Presentation Slides</button></a>
+                    <br><br>
+                    <h6> Appeared in OSDI, 2022</h6>
+                    <br></br>
+                  </center>
+                  <h6> </h6>
+                    <h4><center>Orion has the following three distinctive features:</center></h4>
+                    <h5>
+                    <ol>
+                      <li>It creates a performance model accounting for runtime dependencies within a DAG.</li>
+                      <li>It uses a method for co-locating parallel invocations in a VM, mitigating skew among the invocations.</li>
+                      <li>It uses a method for pre-warming VMs for ensuing functions in a DAG.</li>
+                    </ol> <center>
+                    <a href="https://schaterji.io/publications/2022/orion/"><button type="button" class="btn btn-outline-primary">Learn More</button></a> </center>
+                  </h5>
+              </div>
+            </div>
+
+
+            </div>
+            <br> </br>
+
+<!-- SONIC -->
+
+      <div class="contain" style="height:500px;">
+        <h2><center>SONIC</center></h2>
+        <br></br>
+
+        <div class="row align-items-center"style="max-width: 40%; float:right; max-height:20%; background:white; margin:0px">
+          <div class="col">
+            <a href="https://www.usenix.org/conference/atc21/presentation/mahgoub">
+              <img style="width: 100%;" alt="sonic" src="images/technology/sonic1.png"></a>
+              <a href="https://www.usenix.org/conference/atc21/presentation/mahgoub">
+                <img style="width: 100%;" alt="sonic" src="images/technology/sonic2.png"></a>
+          </div>
+        </div>
+
+            <div class="row align-items-center"style="max-width: 50%; float:left; max-height:20%; background:white; margin:0px"> <center>
+              <div class="col">
+                <h5>This is our offering for serverless applications and customizes how to pass data between serverless functions to minimize latency.
+                  Compatible with AWS Lambda. </h5>
+                  <h6>SONIC is a data-passing manager that optimizes application
+                  performance and cost, by transparently selecting the
+            	    optimal data-passing method for each edge of a serverless
+            	    workflow DAG and implementing communication-aware function
+            	    placement.</h6>
+                <a href="https://www.usenix.org/conference/atc21/presentation/mahgoub"><button type="button" class="btn me-md-2 btn-outline-primary">USENIX Research Paper</button></a>
+                <a href="https://www.usenix.org/system/files/atc21_slides_mahgoub.pdf"><button type="button" class="btn me-md-2 btn-outline-primary">USENIX Presentation Slides</button></a>
+                <br><br>
+                <h6> Appeared in Usenix Annual Technical Conference, 2021</h6>
+                <br></br>
+              </center>
+              <h6> </h6>
+                <h4><center>Sonic has the following three distinctive features:</center></h4>
+                <h5>
+                <ol>
+                  <li>It applies to the emerging class of serverless applications.</li>
+                  <li>It dynamically selects the best data passing options balancing latency and cost.</li>
+                  <li>It does not need any modification to the applications.</li>
+                </ol> <center>
+                <a href="techdetails/sonic.html"><button type="button" class="btn btn-outline-primary">Learn More</button></a> </center>
+              </h5>
+          </div>
+        </div>
+      </div>
+
+      <br></br>
+
+<!-- OptimusCloud -->
+
+      <div class="contain" style="height:500px;">
+        <h2><center>OptimusCloud</center></h2>
+        <br>
+
+        <div class="row align-items-center"style="max-width: 50%; float:left; max-height:20%; background:white; margin:0px">
+          <div class="col">
+            <a href="https://www.usenix.org/conference/atc20/presentation/mahgoub">
+              <img style="width: 75%;" alt="optimuscloud" src="images/technology/optimuscloud1.png"></a>
+              <a href="https://www.usenix.org/conference/atc20/presentation/mahgoub">
+                <img style="width: 75%;" alt="optimuscloud" src="images/technology/optimuscloud2.png"></a>
+          </div>
+        </div>
+
+
+        <div class="row align-items-center"style="max-width: 50%; float:right; max-height:20%; background:white; margin:0px"> <center>
+          <div class="col">
+            <h5>This is our dynamic, cloud-hosted database tuner, optimized for Cassandra and AWS.</h5>
+            <a href="https://www.usenix.org/conference/atc20/presentation/mahgoub"><button type="button" class="btn me-md-2 btn-outline-primary">USENIX Research Paper</button></a>
+            <a href="https://www.youtube.com/watch?v=PV_ZQnp5CDo"><button type="button" class="btn me-md-2 btn-outline-primary">Youtube Video</button></a>
+            <a href="https://www.youtube.com/watch?v=TVWIaFg0XSM"><button type="button" class="btn btn-outline-primary">USENIX Presentation</button></a>
+            <br><br>
+            <h6> Appeared in Usenix Annual Technical Conference, 2020. US Patent Pending.</h6>
+            <br></br>
+          </center>
+            <h4><center>OptimusCloud has the following three distinctive features:</center></h4>
+            <h5>
+            <ol>
+              <li>It considers heterogeneous cluster configurations.</li>
+              <li>It jointly optimizes database and VM configurations.</li>
+              <li>It dynamically adjusts configuration as workload behavior changes.</li>
+            </ol><center>
+            <a href="techdetails/optimuscloud.html"><button type="button" class="btn btn-outline-primary">Learn More</button></a> </center>
+          </h5>
+      </div>
+    </div>
+      </div>
+
+<br> </br>
+
+<!-- Sophia -->
+
+        <div class="contain" style="height:500px;">
+          <h2><center>Sophia</center></h2>
           <br>
-          <div class="row align-items-center">
+
+          <div class="row align-items-center"style="max-width: 40%; float:right; max-height:20%; background:white; margin:0px">
             <div class="col">
               <a href="https://www.usenix.org/conference/atc19/presentation/mahgoub">
-                <img style="width: 80%;" alt="sophia" src="images/technology/sophia.png"></a>
-            </div>
-            <div class="col">
-              <h5>
-                This is our dynamic, on-premise database tuner for more privacy-minded users, 
-                optimized for Cassandra and Redis and benchmarked against ScyllaDB
-              </h5>
-              <a href="https://www.usenix.org/conference/atc19/presentation/mahgoub"><button type="button" class="btn me-md-2 btn-outline-primary">Read</button></a>
-              <a href="https://www.youtube.com/watch?v=z0u8WWJ5XWs"><button type="button" class="btn btn-outline-primary">Media</button></a>
-	      <br><br>
-	      <h5> Appeared in Usenix Annual Technical Conference, 2019 </h5>
-	      <h5> US Patent Pending </h5>
+                <img style="width: 85%;" alt="sophia" src="images/technology/sophia1.png"></a>
+                <a href="https://www.usenix.org/conference/atc19/presentation/mahgoub">
+                  <img style="width: 85%;" alt="sophia" src="images/technology/sophia2.png"></a>
             </div>
           </div>
-          <br><br>
-          <p>
-            Sophia has the following three distinctive features:
-            <ol>
-              <li>SOPHIA performs cost-benefit analysis to achieve long-horizon optimized performance for clustered NoSQL instances in the face of dynamic workload changes.</li>
-              <li>SOPHIA executes a decentralized protocol to gracefully switch over the cluster to the new configuration while respecting data consistency requirements, and</li>
-              <li>SOPHIA maintains data availability throughout the reconfiguration.</li>
-            </ol>
-            <a href="techdetails/sophia.html"><button type="button" class="btn btn-outline-primary">Details</button></a>
-	  </p>
+
+    <div class="row align-items-center"style="max-width: 50%; float:left; max-height:20%; background:white; margin:0px"> <center>
+      <div class="col">
+        <h5>This is our dynamic, on-premise database tuner for more privacy-minded users,
+        optimized for Cassandra and Redis and benchmarked against ScyllaDB. </h5>
+        <a href="https://www.usenix.org/conference/atc19/presentation/mahgoub"><button type="button" class="btn me-md-2 btn-outline-primary">USENIX Research Paper</button></a>
+        <a href="https://www.youtube.com/watch?v=z0u8WWJ5XWs"><button type="button" class="btn me-md-2 btn-outline-primary">USENIX Presentation</button></a>
+        <br><br>
+        <h6> Appeared in Usenix Annual Technical Conference, 2019. US Patent Pending.</h6>
+        <br></br>
+      </center>
+        <h4><center>Sophia has the following three distinctive features:</center></h4>
+        <h5>
+        <ol>
+          <li>It performs cost-benefit analysis to achieve long-horizon optimized performance for clustered NoSQL instances in the face of dynamic workload changes.</li>
+          <li>It executes a decentralized protocol to gracefully switch over the cluster to the new configuration while respecting data consistency requirements.</li>
+          <li>It maintains data availability throughout the reconfiguration.</li>
+        </ol> <center>
+        <a href="techdetails/sophia.html"><button type="button" class="btn btn-outline-primary">Learn More</button></a> </center>
+      </h5>
+  </div>
+</div>
         </div>
 
-	<hr>
-	
-        <div class="container">
-          <h3>Sonic</h3>
-          <br>
-          <div class="row align-items-center">
-            <div class="col">
-              <a href="https://www.usenix.org/conference/atc21/presentation/mahgoub">
-                <img style="width: 40%;" alt="sonic" src="images/technology/sonic_DAG_video.png">
-                <img style="width: 40%;" alt="sonic" src="images/technology/sonic_three_methods.png"></a>
-            </div>
-            <div class="col">
-              <h5>This is our offering for serverless applications and customizes how to pass data between serverless functions to minimize latency. 
-		  Compatible with AWS Lambda. </h5>
-              <a href="https://www.usenix.org/conference/atc21/presentation/mahgoub"><button type="button" class="btn me-md-2 btn-outline-primary">Read</button></a>
-              <a href="https://www.usenix.org/system/files/atc21_slides_mahgoub.pdf"><button type="button" class="btn me-md-2 btn-outline-primary">Presentation</button></a>
-	      <br><br>
-	      <h5> Appeared in Usenix Annual Technical Conference, 2021 </h5>         
-            </div>
-          </div>
-          <br><br>
-          <p>
-	    SONIC is a data-passing manager that optimizes application
-	    performance and cost, by transparently selecting the
-	    optimal data-passing method for each edge of a serverless
-	    workflow DAG and implementing communication-aware function
-	    placement.
-	  </p>
-          <p>
-            It has the following three distinctive features:
-            <ol>
-              <li>It applies to the emerging class of serverless applications,</li>
-              <li>It dynamically selects the best data passing options balancing latency and cost, and</li>
-              <li>It does not need any modification to the applications.</li>
-            </ol>
-          </p>
-          <a href="techdetails/sonic.html"><button type="button" class="btn btn-outline-primary">Details</button></a>
-        </div>
+<br></br>
 
-	<hr>
-	
-        <div class="container">
-            <h3>Rafiki</h3>
+<!-- Rafiki -->
+
+
+        <div class="contain" style="height: 400px">
+            <h2><center>Rafiki</center></h2>
             <br>
-            <div class="row align-items-center">
-                <div class="col">
-                    <a href="https://dl.acm.org/doi/abs/10.1145/3135974.3135991">
-                        <img style="width: 80%;" alt="rafiki" src="images/technology/rafiki.png"></a>
-                </div>
-                <div class="col">
-                  <h5>This is our static database tuner. Given a static workload and execution environment, it provides the optimal configuration for your Cassandra database. </h5>
-                  <a href="https://dl.acm.org/doi/abs/10.1145/3135974.3135991"><button type="button" class="btn btn-outline-primary">Read</button></a>
-		  <br><br>
-		  <h5> Appeared in ACM/IFIP/USENIX Middleware Conference, 2017 </h5>         
-                </div>
-            </div>
-        </div>
 
+            <div class="row align-items-center"style="max-width: 50%; float:left; max-height:20%; background:white; margin:0px">
+              <div class="col">
+                <br></br>
+                <a href="https://dl.acm.org/doi/abs/10.1145/3135974.3135991">
+                  <img style="width: 100%;" alt="rafiki" src="images/technology/rafiki.png"></a>
+              </div>
+            </div>
+
+            <div class="row align-items-center"style="max-width: 50%; float:left; max-height:20%; background:white; margin:0px"> <center>
+              <div class="col">
+                <br></br>
+                <h5>This is our static database tuner. Given a static workload and execution environment,
+                  it provides the optimal configuration for your Cassandra database.</h5>
+                <a href="https://dl.acm.org/doi/abs/10.1145/3135974.3135991"><button type="button" class="btn me-md-2 btn-outline-primary">USENIX Research Paper</button></a>
+                <br><br>
+                <h6> Appeared in ACM/IFIP/USENIX Middleware Conference, 2017</h6>
+              </h5>
+          </div>
+        </div>
+            </center> </div>
+
+<br></br>
 
     </body>
 

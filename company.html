@@ -23,6 +23,42 @@
 	  h4 {
 	      line-height: 1.8;
 	  }
+
+
+    .button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      max-width:500px;
+    }
+
+    .buttonDown{
+      background-color: white;
+      color: black;
+      border: 1px;
+      scroll-behavior: smooth;
+    }
+
+    .buttonDown:hover{background-color:grey}
+
+    .scrollable {
+      scroll-behavior: smooth;
+    }
+
+    #section1 {
+    }
+
+    #section2 {
+      }
+
 	</style>
     </head>
 
@@ -33,32 +69,37 @@
             </script>
         </div>
 
-        <div class="container">
-            <br>
-            <h3>Problems <img src="images/jigsaw.png" width=10%> </h3>
-	    <h4>
-              <ul>
-                <li>How do you rightsize your cloud-hosted NoSQL databases?</li>
-                <li>How do you handle application workload changes over time?</li>
-                <li>How do you maximize throughput normalized by $ cost?</li>
-              </ul>
+        <div class="container" id="section1">
+            <h3><center>Problems <img src="images/company/jigsaw.png" width=10%> </center></h3>
+	    <h4> <center>
+                How do you rightsize your cloud-hosted NoSQL databases?<br>
+                How do you handle application workload changes over time?<br>
+                How do you maximize throughput normalized by $ cost?<br></br>
             <p>Look no further than our patented technology, peer reviewed at the top systems conferences. </p>
-	    </h4>
+	    </h4> </center>
         </div>
 
-	<hr>
-	
-        <div class="container">
-            <h3>KeyByte Products  <img src="images/solution.png" width=10%> </h3>
-            <h4>
-	      <ul>
-                <li>OptimusCloud: For cloud-hosted databases</li>
-                <li>Sophia: For on-premise databases</li>
-                <li>SONIC: For serverless optimization for machine learning workloads</li>
-                <li>Rafiki: For databases with static workloads</li>
-              </ul>
-	    </h4>
+        <div>
+            <center>
+            <a class="scrollable" href=#section2><img src="images/company/arrow_very_down.png" width=5%></a>
+
+          </center>
+
         </div>
+
+
+        <div class="container" id="section2"> <center>
+            <h3>KeyByte Products and Technology<img src="images/company/solution.png" width=10%> </h3>
+            <h4> <u>
+                <a href="https://keybyte.xyz/techdetails/optimuscloud.html">OptimusCloud: For cloud-hosted databases</a> <br>
+                <a href="https://keybyte.xyz/techdetails/sophia.html">Sophia: For on-premise databases</a> <br>
+                <a href="https://keybyte.xyz/techdetails/sonic.html">SONIC: For serverless optimization for machine learning workloads</a> <br>
+                <a href="https://dl.acm.org/doi/abs/10.1145/3135974.3135991">Rafiki: For databases with static workloads</a> <br>
+                <br></br>
+                <br></br>
+	   </u> </h4> </center>
+        </div>
+
     </body>
 
 </html>

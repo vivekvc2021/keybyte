@@ -1,5 +1,15 @@
 .container {
-    margin: 8%;
+  margin:8%;
+}
+
+.contain{
+  max-width: 80%;
+  padding: 50px;
+  border: 2px solid grey;
+  margin: auto;
+  border-radius: 25px;
+  box-sizing: content-box;
+  padding-bottom: 100px;
 }
 
 body {
@@ -8,7 +18,11 @@ body {
     color: black;
 }
 
-h1, h3 {
+.header {
+  padding: 40px;
+}
+
+h1, h2, h3 {
     font-family: Comfortaa, sans-serif;
     font-weight: bold;
 }
