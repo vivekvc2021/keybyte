@@ -4,22 +4,23 @@
 
 .contain{
   max-width: 80%;
-  padding: 50px;
+  padding: 4%;
   border: 2px solid grey;
   margin: auto;
-  border-radius: 25px;
+  border-radius: 10%;
+  /* border-radius:25px; */
   box-sizing: content-box;
-  padding-bottom: 100px;
+  padding-bottom: 8%;
 }
 
 body {
     font-family: Nunito, sans-serif;
-    font-size: 12pt;
+    font-size: 100%;
     color: black;
 }
 
 .header {
-  padding: 40px;
+  padding: 4%;
 }
 
 h1, h2, h3 {
